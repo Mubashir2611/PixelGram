@@ -25,7 +25,7 @@
 
 ## Introduction
 
-Explore social media with this user-friendly platform. Easily create and explore posts, and enjoy a robust authentication system and quick data fetching using React Query.
+PixelGram social media with this user-friendly platform. Easily create and explore posts, and enjoy a robust authentication system and quick data fetching using React Query.
 
 ## Tech Stack
 
