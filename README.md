@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/badge/-Typescript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
   </div>
 
-  <h3 align="center">A Social Media Application</h3>
+  <h3 align="center">PixelGRam</h3>
 
 </div>
 
