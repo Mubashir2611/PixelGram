@@ -21,7 +21,6 @@
 2. [Tech Stack](#tech-stack)
 3. [Features](#features)
 4. [Quick Start](#quick-start)
-5. [Links](#links)
 
 ## Introduction
 
