@@ -2,6 +2,7 @@ import * as z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
@@ -17,6 +18,7 @@ const SigninForm = () => {
   const { toast } = useToast();
   const navigate = useNavigate();
   const { checkAuthUser, isLoading: isUserLoading } = useUserContext();
+  const [showPassword, setShowPassword] = useState(false);
 
   // Query
   const { mutateAsync: signInAccount, isLoading } = useSignInAccount();
@@ -86,7 +88,20 @@ const SigninForm = () => {
               <FormItem>
                 <FormLabel className="shad-form_label">Password</FormLabel>
                 <FormControl>
-                  <Input type="password" className="shad-input" {...field} />
+                  <div className="relative">
+                    <Input type={showPassword ? "text" : "password"} className="shad-input" {...field} />
+                    <button type="button" className="absolute inset-y-0 right-0 pr-3 flex items-center text-sm leading-5" onClick={() => setShowPassword(!showPassword)}>
+                      {showPassword ? (
+                        <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-4.553a9.003 9.003 0 00-12.106 0L15 10zm0 0l-4.553 4.553a9.003 9.003 0 01-12.106 0L15 10z"></path>
+                        </svg>
+                      ) : (
+                        <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3l18 18M9.879 9.879A3 3 0 0115 15m1 1a9.003 9.003 0 01-13.106 0m0 0A9.003 9.003 0 0115 15m1 1a9.003 9.003 0 01-13.106 0m13.106 0L9.879 9.879"></path>
+                        </svg>
+                      )}
+                    </button>
+                  </div>
                 </FormControl>
                 <FormMessage />
               </FormItem>
