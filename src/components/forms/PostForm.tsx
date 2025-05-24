@@ -74,8 +74,9 @@ const PostForm = ({ post, action }: PostFormProps) => {
       toast({
         title: `${action} post failed. Please try again.`,
       });
+    } else {
+      navigate("/");
     }
-    navigate("/");
   };
 
   return (
