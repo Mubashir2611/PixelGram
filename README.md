@@ -9,6 +9,7 @@
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
     <img src="https://img.shields.io/badge/-React_Query-black?style=for-the-badge&logoColor=white&logo=reactquery&color=FF4154" alt="reactquery" />
     <img src="https://img.shields.io/badge/-Typescript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
+    <img src="https://img.shields.io/badge/-Socket.io-black?style=for-the-badge&logoColor=white&logo=socket.io&color=010101" alt="socket.io" />
   </div>
 
   <h3 align="center">PixelGram</h3>
@@ -34,6 +35,7 @@ PixelGram is a social media with user-friendly platform. Easily create and explo
 - TypeScript
 - Shadcn
 - Tailwind CSS
+- Socket.IO
 
 ## Features
 
